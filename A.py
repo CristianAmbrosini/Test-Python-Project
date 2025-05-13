@@ -2,6 +2,7 @@ def add(a, b):
     """
     Adds two numbers and returns the result.
     """
+    # TODO: do something!
     return a + b
 
 if __name__ == "__main__":
