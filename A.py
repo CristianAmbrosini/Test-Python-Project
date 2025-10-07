@@ -141,13 +141,7 @@ def get_user_data(user_id):
     Retrieves user data from a database or returns None if not found.
     """
     if user_id > 0:
-        # Simulate database query returning a user object
-        class User:
-            def __init__(self, user_id):
-                self.id = user_id
-                self.name = f"User {user_id}"
-        
-        return User(user_id)
+        return ""
     else:
         return None
 
