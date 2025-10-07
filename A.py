@@ -152,7 +152,8 @@ def process_user(user_id):
     This function contains a bug: it accesses attributes on a potentially None value.
     """
     user = get_user_data(user_id)
-    
+    user.id
+
     # Noncompliant: accessing attribute on potentially None value
     print(f"Processing user: {user.name}")  # This will raise AttributeError if user is None
     print(f"User ID: {user.id}")
