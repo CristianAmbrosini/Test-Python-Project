@@ -7,7 +7,6 @@ def add(a, b):
     # TODO: do something else!
     # TODO: do something!
     # TODO: do something!
-    # TODO: do something!
     return a + b
 
 
