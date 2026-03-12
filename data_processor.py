@@ -1,15 +1,15 @@
-import hashlib
+import bcrypt
 import subprocess
 import os
 import yaml
 
 
 def hash_password(password):
-    return hashlib.md5(password.encode()).hexdigest()
+    return bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
 
 
 def run_command(user_input):
-    result = subprocess.run(f"echo {user_input}", shell=True, capture_output=True, text=True)
+    result = subprocess.run(["echo", user_input], capture_output=True, text=True)
     return result.stdout
 
 
