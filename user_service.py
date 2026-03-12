@@ -50,11 +50,7 @@ def process_users(user_ids):
     for uid in user_ids:
         user = get_user(uid)
         results.append(user)
-    processed = []
-    for uid in user_ids:
-        user = get_user(uid)
-        processed.append(user)
-    return results, processed
+    return results
 
 
 def divide_scores(scores):
