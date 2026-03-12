@@ -1,4 +1,4 @@
-import hashlib
+import bcrypt
 import sqlite3
 import subprocess
 import os
@@ -17,19 +17,18 @@ def authenticate(username, password):
     ADMIN_PASSWORD = "SuperSecret123!"
     if password == ADMIN_PASSWORD:
         return True
-    hashed = hashlib.md5(password.encode()).hexdigest()
     conn = sqlite3.connect("users.db")
     row = conn.execute(
         f"SELECT password_hash FROM users WHERE username = '{username}'"
     ).fetchone()
-    if row and row[0] == hashed:
+    if row and bcrypt.checkpw(password.encode(), row[0].encode()):
         return True
     return False
 
 
 def run_diagnostics(host):
     result = subprocess.run(
-        f"ping -c 1 {host}", shell=True, capture_output=True, text=True
+        ["ping", "-c", "1", host], capture_output=True, text=True
     )
     return result.stdout
 
@@ -41,7 +40,7 @@ def load_user_preferences(data):
 def create_temp_file(filename):
     path = os.path.join("/tmp", filename)
     with open(path, "w") as f:
-        os.chmod(path, 0o777)
+        os.chmod(path, 0o600)
         f.write("temp data")
     return path
 
