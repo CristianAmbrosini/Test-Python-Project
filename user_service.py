@@ -58,7 +58,7 @@ def process_users(user_ids):
 
 
 def divide_scores(scores):
-    return [100 / s for s in scores]
+    return [100 / s for s in scores if s != 0]
 
 
 def log_login(username, password):
