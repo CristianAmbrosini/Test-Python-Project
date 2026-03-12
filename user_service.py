@@ -18,8 +18,8 @@ def get_db_connection():
 def find_user(username):
     conn = get_db_connection()
     cursor = conn.cursor()
-    query = "SELECT * FROM users WHERE username = '" + username + "'"
-    cursor.execute(query)
+    query = "SELECT * FROM users WHERE username = ?"
+    cursor.execute(query, (username,))
     result = cursor.fetchone()
     return result
 
@@ -39,6 +39,8 @@ def create_user(username, password):
 
 
 def get_average_age(ages):
+    if not ages:
+        return 0
     total = 0
     for age in ages:
         total += age
