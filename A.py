@@ -3,11 +3,6 @@ def add(a, b):
     Adds two numbers and returns the result.
     """
 
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
     # TODO: do something else!
     # TODO: do something!
     # TODO: do something else!
