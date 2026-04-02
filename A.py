@@ -136,6 +136,20 @@ def add(a, b):
     return a + b
 
 
+def subtract(a, b):
+    """
+    Subtracts b from a and returns the result.
+    """
+    return a - b
+
+
+def multiply(a, b):
+    """
+    Multiplies two numbers and returns the result.
+    """
+    return a * b
+
+
 def get_user_data(user_id):
     """
     Retrieves user data from a database or returns None if not found.
