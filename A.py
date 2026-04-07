@@ -1,139 +1,11 @@
 def add(a, b):
-    """
-    Adds two numbers and returns the result.
-    """
-
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
+    """Returns the sum of two numbers."""
     return a + b
+
+
+def subtract(a, b):
+    """Returns the difference of two numbers."""
+    return a - b
 
 
 def get_user_data(user_id):
@@ -163,9 +35,9 @@ if __name__ == "__main__":
     # Example usage
     result = add(2, 3)
     print(f"The result of adding 2 and 3 is: {result}")
-    
+
     # This will work fine
     process_user(1)
-    
+
     # This will raise AttributeError because user will be None
     process_user(-1)
