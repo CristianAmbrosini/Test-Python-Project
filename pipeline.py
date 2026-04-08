@@ -108,7 +108,11 @@ def _lookup_region(event_id: str) -> str:
 
 def _lookup_org_tier(event_id: str) -> str:
     # Determines the org's subscription tier — used for rate limiting handlers.
-    return "enterprise" if event_id.startswith("ent-") else "standard"
+    if event_id.startswith("ent-"):
+        return "enterprise"
+    if event_id.startswith("pro-"):
+        return "pro"
+    return "standard"
 
 
 # ---------------------------------------------------------------------------
