@@ -164,7 +164,7 @@ def persist(event: Event, handler_name: str) -> None:
 
 def acknowledge(event: Event) -> None:
     """Delete the message from the queue so it isn't reprocessed."""
-    logger.info("ack event=%s", event.id)
+    logger.info("ack event=%s retries=%d", event.id, event.retry_count)
     # ... delete from SQS
 
 
