@@ -170,7 +170,7 @@ def acknowledge(event: Event) -> None:
 
 def send_to_dlq(event: Event, reason: str) -> None:
     """Move the event to the dead-letter queue for manual inspection."""
-    logger.warning("dlq event=%s reason=%s", event.id, reason)
+    logger.warning("dlq event=%s reason=%s retries=%d", event.id, reason, event.retry_count)
     # ... forward to DLQ
 
 
