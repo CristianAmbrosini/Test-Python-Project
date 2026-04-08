@@ -158,7 +158,7 @@ HANDLERS = {
 
 def persist(event: Event, handler_name: str) -> None:
     """Write the processed event to the audit log."""
-    logger.info("persisting event=%s handler=%s", event.id, handler_name)
+    logger.info("persisting event=%s handler=%s org_tier=%s", event.id, handler_name, event.metadata.get("org_tier"))
     # ... write to DynamoDB / S3
 
 
