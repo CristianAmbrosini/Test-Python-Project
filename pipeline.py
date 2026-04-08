@@ -95,6 +95,7 @@ def enrich(event: Event) -> Event:
     try:
         event.metadata["enriched"] = True
         event.metadata["source_region"] = _lookup_region(event.id)
+        event.metadata["org_tier"] = _lookup_org_tier(event.id)
         return event
     except Exception as exc:
         raise EnrichmentError(f"enrichment failed for {event.id}") from exc
@@ -103,6 +104,11 @@ def enrich(event: Event) -> Event:
 def _lookup_region(event_id: str) -> str:
     # Simulates an external call; real impl would hit a metadata service.
     return "eu-central-1" if event_id.startswith("eu-") else "us-east-1"
+
+
+def _lookup_org_tier(event_id: str) -> str:
+    # Determines the org's subscription tier — used for rate limiting handlers.
+    return "enterprise" if event_id.startswith("ent-") else "standard"
 
 
 # ---------------------------------------------------------------------------
