@@ -103,7 +103,11 @@ def enrich(event: Event) -> Event:
 
 def _lookup_region(event_id: str) -> str:
     # Simulates an external call; real impl would hit a metadata service.
-    return "eu-central-1" if event_id.startswith("eu-") else "us-east-1"
+    if event_id.startswith("eu-"):
+        return "eu-central-1"
+    if event_id.startswith("ap-"):
+        return "ap-southeast-1"
+    return "us-east-1"
 
 
 def _lookup_org_tier(event_id: str) -> str:
