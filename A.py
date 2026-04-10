@@ -21,9 +21,7 @@ def divide(a, b):
 
 
 def get_user_data(user_id):
-    """
-    Retrieves user data from a database or returns None if not found.
-    """
+    """Retrieves user data from a database or returns None if not found."""
     if user_id > 0:
         return ""
     else:
@@ -44,7 +42,6 @@ def process_user(user_id):
 
 
 if __name__ == "__main__":
-    # Example usage
     result = add(2, 3)
     print(f"The result of adding 2 and 3 is: {result}")
 
