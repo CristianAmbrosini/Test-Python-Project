@@ -27,7 +27,8 @@ def run_report(report_name):
 
 
 def divide(a, b):
-    # Noncompliant: no check for division by zero
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
     return a / b
 
 
@@ -36,7 +37,8 @@ def process_payment(amount, currency):
         rate = 1.0
     elif currency == "EUR":
         rate = 1.1
-    # Noncompliant: missing else — returns None implicitly for unknown currencies
+    else:
+        raise ValueError(f"Unsupported currency: {currency}")
     converted = amount * rate
     return converted
 
