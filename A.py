@@ -125,14 +125,6 @@ def add(a, b):
     # TODO: do something else!
     # TODO: do something!
     # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
     return a + b
 
 
