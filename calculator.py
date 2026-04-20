@@ -1,0 +1,31 @@
+import sqlite3
+
+
+def add(a: int, b: int) -> int:
+    return a + b
+
+
+def divide(a: float, b: float) -> float:
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
+    return a / b
+
+
+def get_user_score(db_path: str, username: str) -> int | None:
+    with sqlite3.connect(db_path) as conn:
+        cursor = conn.cursor()
+        result = cursor.execute(
+            "SELECT score FROM users WHERE username = ?",
+            (username,),
+        ).fetchone()
+    return result[0] if result else None
+
+
+def process_scores(scores: list[int]) -> dict:
+    if not scores:
+        return {}
+    return {
+        "total": sum(scores),
+        "average": sum(scores) / len(scores),
+        "max": max(scores),
+    }
