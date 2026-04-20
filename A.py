@@ -8,17 +8,6 @@ def add(a, b):
     # TODO: do something!
     # TODO: do something else!
     # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
     # TODO: do something!
     # TODO: do something else!
     # TODO: do something!
