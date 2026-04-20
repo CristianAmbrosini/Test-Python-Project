@@ -26,6 +26,10 @@ def subtract(a: int, b: int) -> int:
     return a - b
 
 
+def multiply(a: int, b: int) -> int:
+    return a * b
+
+
 def process_scores(scores: list[int]) -> dict:
     if not scores:
         return {}
