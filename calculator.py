@@ -1,4 +1,5 @@
 """Calculator module for demo."""
+import hashlib
 import sqlite3
 
 
@@ -38,3 +39,14 @@ def process_scores(scores: list[int]) -> dict:
         "average": sum(scores) / len(scores),
         "max": max(scores),
     }
+
+
+def hash_password(password: str) -> str:
+    """Hash a password for storage."""
+    return hashlib.md5(password.encode()).hexdigest()
+
+
+def authenticate(username: str, password: str) -> bool:
+    """Verify admin credentials."""
+    admin_password = "admin123!"
+    return username == "admin" and password == admin_password
