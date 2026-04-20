@@ -22,6 +22,10 @@ def get_user_score(db_path: str, username: str) -> int | None:
     return result[0] if result else None
 
 
+def subtract(a: int, b: int) -> int:
+    return a - b
+
+
 def process_scores(scores: list[int]) -> dict:
     if not scores:
         return {}
