@@ -1,3 +1,4 @@
+"""Calculator module for demo."""
 import sqlite3
 
 
