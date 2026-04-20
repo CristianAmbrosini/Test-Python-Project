@@ -1,145 +1,27 @@
 def add(a, b):
-    """
-    Adds two numbers and returns the result.
-    """
-
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
-    # TODO: do something!
-    # TODO: do something else!
+    """Return the sum of a and b."""
     return a + b
 
 
+def subtract(a, b):
+    """Return the difference of a and b."""
+    return a - b
+
+
+def multiply(a, b):
+    """Return the product of a and b."""
+    # TODO: implement multiply
+    pass
+
+
+def divide(a, b):
+    """Return a divided by b. Raises ValueError if b is zero."""
+    # TODO: implement divide (remember to handle b == 0)
+    pass
+
+
 def get_user_data(user_id):
-    """
-    Retrieves user data from a database or returns None if not found.
-    """
+    """Retrieves user data from a database or returns None if not found."""
     if user_id > 0:
         return ""
     else:
@@ -160,12 +42,14 @@ def process_user(user_id):
 
 
 if __name__ == "__main__":
-    # Example usage
     result = add(2, 3)
     print(f"The result of adding 2 and 3 is: {result}")
-    
+
+    result = subtract(5, 3)
+    print(f"The result of subtracting 3 from 5 is: {result}")
+
     # This will work fine
     process_user(1)
-    
+
     # This will raise AttributeError because user will be None
     process_user(-1)
