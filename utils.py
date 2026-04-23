@@ -16,3 +16,16 @@ def clamp(value, min_value, max_value):
     if value > max_value:
         return max_value
     return value
+
+
+def truncate_string(text, max_length):
+    if len(text) <= max_length:
+        return text
+    return text[:max_length] + "..."
+
+
+def parse_int_safe(value):
+    try:
+        return int(value)
+    except (ValueError, TypeError):
+        return None
