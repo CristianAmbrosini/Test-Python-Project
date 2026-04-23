@@ -33,3 +33,7 @@ def parse_int_safe(value):
 
 def slugify(text):
     return text.lower().strip().replace(" ", "-")
+
+
+def pluralize(word, count):
+    return word if count == 1 else word + "s"
