@@ -41,3 +41,16 @@ def average(numbers):
         raise ValueError("Cannot compute average of empty list")
     return sum(numbers) / len(numbers)
 # Trigger review
+
+def percentage(value, total):
+    if total == 0:
+        raise ValueError("total cannot be zero")
+    return (value / total) * 100
+
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
