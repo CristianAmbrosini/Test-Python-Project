@@ -29,3 +29,7 @@ def parse_int_safe(value):
         return int(value)
     except (ValueError, TypeError):
         return None
+
+
+def slugify(text):
+    return text.lower().strip().replace(" ", "-")
