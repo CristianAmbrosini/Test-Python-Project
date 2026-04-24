@@ -25,3 +25,9 @@ def pad_left(text, width, char=' '):
 
 def reverse_words(text):
     return ' '.join(text.split()[::-1])
+
+
+def truncate(text, max_length, suffix='...'):
+    if len(text) <= max_length:
+        return text
+    return text[:max_length - len(suffix)] + suffix
