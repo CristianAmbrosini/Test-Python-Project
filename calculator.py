@@ -37,4 +37,10 @@ def process_scores(scores: list[int]) -> dict:
         "total": sum(scores),
         "average": sum(scores) / len(scores),
         "max": max(scores),
+        "min": min(scores),
     }
+
+
+def power(base: float, exponent: float) -> float:
+    result = base ** exponent
+    return result
