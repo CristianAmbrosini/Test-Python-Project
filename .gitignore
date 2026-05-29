@@ -1,0 +1,12 @@
+
+# Claude Wrapper Bootstrap
+.claude/
+.pi/
+.orbit/
+agents/
+logs/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
